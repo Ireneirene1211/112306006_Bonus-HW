@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 70%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 15%; /* Adjust the width as needed */
+            margin-left:4%
+        }
+
+        .form-container input[type="text"],
+        .form-container textarea {
+            width: calc(70% - 22px); /* Adjust the width as needed */
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .form-container textarea {
+            height: 100px;
+            resize: none; /* Disable textarea resizing */
+        }
+
+        .form-container img {
+            width: 100%;
+            height: auto;
+            max-width: 100%; /* Ensure the image does not exceed the width of its container */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <div class="form-container">
+        <form action="">
+            <div class="form-row">
+                <label for="input1">input1</label>
+                <input type="text" id="input1" name="input1"style="width:75%" placeholder="input1">
+            </div>
+
+            <div class="form-row">
+                <label for="input2" style="width: 15%;">input2</label>
+                <input type="text" id="input2" name="input2" style="width: 27.4%;" placeholder="input2">
+                <label for="input3" style="width: 15%;margin-right: auto;">input3</label>
+                <input type="text" id="input3" name="input3" style="width: 27.5%;" placeholder="input3">
+            </div>
+
+            <div class="form-row">
+                <label for="input4">input4</label>
+                <input type="text" id="input4" name="input4" placeholder="input4">
+            </div>
+
+            <div class="form-row">
+                <label for="textarea"style="float:left">textarea</label>
+                <textarea id="textarea" name="textarea"style="width:75%" placeholder="make it not resizeable"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="picture1"style="float:left">picture 1</label>
+                <img id="picture1" name="picture1" style="width:75%"src="https://placekitten.com/600/300" alt="Image">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
